@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-const mongoURL = require('./config').variablesDeConfuguracion;
+const mongoURL = require('./config').variablesDeConfuguracion.mongoURL;
 
 //const url = "mongodb+srv://Juva:lopez132@cluster.eqeq0.mongodb.net/"
 
