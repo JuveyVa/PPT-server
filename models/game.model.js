@@ -16,18 +16,18 @@ const sesionEsquema = new mongoose.Schema({
       type: Number,
       default: 0
     },
-    historial: {
-        type: [mongoose.Types.ObjectId],
-        ref: 'Historial'
+    //historial: {
+    //    type: [mongoose.Types.ObjectId],
+    //    ref: 'Historial'
+    //},
+    historialUsuario: {
+      type: Array,
+      default: []
     },
-    //historialUsuario: {
-    //  type: Array,
-    //  default: []
-    //},
-    //historialCPU: {
-    //  type: Array,
-    //  default: []
-    //},
+    historialCPU: {
+      type: Array,
+      default: []
+    },
     equipoElegido: {
       type: pokemonSchema,
       required: false
